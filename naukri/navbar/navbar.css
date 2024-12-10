@@ -1,0 +1,283 @@
+
+#header {
+
+    width: 100%;
+    height: 50px;
+    padding: 10px 0px;
+    background-color: white;
+    position: sticky;
+    z-index: 50;
+    top: 0;
+    box-shadow: rgba(27, 31, 35, 0.04) 0px 1px 0px, rgba(255, 255, 255, 0.25) 0px 1px 0px inset;
+}
+
+#navbar {
+    display: flex;
+    width: 1120px !important;
+    margin: auto;
+    position: relative;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#navbar>div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav {
+    background: white;
+    font-size: 0;
+    overflow: hidden;
+    height: 70px;
+}
+
+
+nav>ul>li {
+    display: inline-block;
+    font-size: 14px;
+    /* padding: 0 15px; */
+    position: relative;
+}
+
+nav>ul>li:first-child {
+    padding-left: 0;
+}
+
+nav>ul>li:last-child {
+    padding-right: 0;
+}
+
+nav>ul>li>a {
+    color: black;
+    display: block;
+    position: relative;
+    padding: 20px 0;
+    border-bottom: 3px solid transparent;
+}
+
+nav>ul>li:hover>a {
+    color: black;
+    border-bottom: 3px solid #ff7555;
+}
+
+
+#images>img {
+    width: 100%;
+}
+
+
+
+
+#btn>div {
+    border-radius: 20px;
+    margin: 0px 4px;
+}
+
+
+
+.login {
+    border: 1px solid dodgerblue;
+    color: dodgerblue;
+    width: 79px;
+    height: 39px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#btn>div>a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.register {
+    background-color: #ff7555;
+    margin-left: 20px;
+    width: 100px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.register>a {
+    color: #fff;
+}
+#left_portion {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    margin-left: 40px;
+
+}
+
+#left_portion>div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.middle_menu {
+    width: 500px;
+}
+
+.mm_ul {
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    list-style: none;
+    /* border-right-style: 1px solid gary; */
+    /* text-decoration: none; */
+}
+
+.menu {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background: white;
+    display: none;
+    position: absolute;
+    text-align: left;
+    width: 447px;
+    padding: 5px;
+    border-radius: 20px;
+    font-size: 13px;
+    margin-left: -149px;
+}
+
+.menu h3 {
+    color: black;
+}
+
+.menu ul {
+    float: none;
+    margin-bottom: 9px;
+    margin-right: 15px;
+    width: 137px;
+    /* border: 1px solid; */
+}
+
+.menu ul:last-child {
+    margin-right: 0;
+}
+
+.menu a {
+    border-bottom: 0px solid #ddd;
+    color: gray;
+    display: block;
+    padding: 10px 0;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    color: rgb(158, 158, 207);
+    font-weight: bold;
+}
+
+.list {
+    position: static;
+}
+
+.list>a {
+    font-family: sans-serif !important;
+    font-size: 16px;
+    padding-left: 21px;
+    position: relative;
+    color: #474d64;
+    font-weight: 500;
+    text-decoration: none;
+    top: 5px;
+}
+
+.list>a:after {
+    font-family: FontAwesome;
+    font-size: 12px;
+    padding-left: 6px;
+    position: relative;
+    font-weight: bold;
+    top: -1px;
+}
+
+.list:hover .menu {
+    display: block;
+}
+
+.list:hover .amp {
+    display: flex;
+    flex-direction: row;
+}
+
+h3 {
+    color: black;
+}
+
+#s {
+    margin-left: -70px;
+    top: -1px;
+    font-size: 16px;
+    padding-left: 13px;
+    border-left: 1px solid gray;
+}
+
+#size {
+    margin-left: -90px;
+    width: 132px;
+    margin-top: 16px;
+}
+
+.list {
+    list-style: none;
+}
+
+h1+p {
+    text-align: center;
+    color: gray;
+    margin: 10px;
+    line-height: 20px;
+    font-size: 18px;
+}
+
+
+
+span {
+    color: grey;
+    font-size: 17px;
+    margin-top: -10px;
+    margin-left: 20px;
+}
+
+
+#loginPanel {
+    position: fixed;
+    top: 0;
+    right: -40%; 
+    width: 30%; 
+    height: 100%; 
+    background-color: white;
+    box-shadow: -2px 0px 5px rgba(0,0,0,0.3);
+    transition: right 0.3s ease-in-out, width 0.5s ease-in-out, height 0.5s ease-in-out; 
+    padding: 20px;
+    box-sizing: border-box;
+    z-index: 1000; 
+}
+
+#loginPanel.expanded {
+    right: 0;
+    width: 30%; 
+    height: 100%;
+    border-radius: 15px;
+}
+
+
+#loginPanel h2 {
+    margin-top: 0;
+}
+
+.closeBtn {
+    position: absolute;
+    top: 28px;
+    right: 35px;
+    font-size: 24px;
+    cursor: pointer;
+}

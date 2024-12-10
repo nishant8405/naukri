@@ -1,0 +1,507 @@
+
+
+/* *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  
+  body {
+    background-color: #f0f2f7;
+    font-family: Arial, Helvetica, sans-serif
+  } */
+
+  #header {
+
+    width: 100%;
+    height: 50px;
+    padding: 10px 0px;
+    background-color: white;
+    position: sticky;
+    z-index: 50;
+    top: 0;
+    box-shadow: rgba(27, 31, 35, 0.04) 0px 1px 0px, rgba(255, 255, 255, 0.25) 0px 1px 0px inset;
+}
+
+#navbar {
+    display: flex;
+    width: 1120px !important;
+    margin: auto;
+    position: relative;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#navbar>div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav {
+    background: white;
+    font-size: 0;
+    overflow: hidden;
+    height: 70px;
+}
+
+
+nav>ul>li {
+    display: inline-block;
+    font-size: 14px;
+    /* padding: 0 15px; */
+    position: relative;
+}
+
+nav>ul>li:first-child {
+    padding-left: 0;
+}
+
+nav>ul>li:last-child {
+    padding-right: 0;
+}
+
+nav>ul>li>a {
+    color: black;
+    display: block;
+    position: relative;
+    padding: 20px 0;
+    border-bottom: 3px solid transparent;
+}
+
+nav>ul>li:hover>a {
+    color: black;
+    border-bottom: 3px solid #ff7555;
+}
+
+
+#images>img {
+    width: 100%;
+}
+
+
+
+
+#btn>div {
+    border-radius: 20px;
+    margin: 0px 4px;
+}
+
+
+
+.login {
+    border: 1px solid dodgerblue;
+    color: dodgerblue;
+    width: 79px;
+    height: 39px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#btn>div>a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.register {
+    background-color: #ff7555;
+    margin-left: 20px;
+    width: 100px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.register>a {
+    color: #fff;
+}
+#left_portion {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    margin-left: 40px;
+
+}
+
+#left_portion>div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.middle_menu {
+    width: 500px;
+}
+
+.mm_ul {
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    list-style: none;
+    /* border-right-style: 1px solid gary; */
+    /* text-decoration: none; */
+}
+
+.menu {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background: white;
+    display: none;
+    position: absolute;
+    text-align: left;
+    width: 447px;
+    padding: 5px;
+    border-radius: 20px;
+    font-size: 13px;
+    margin-left: -149px;
+}
+
+.menu h3 {
+    color: black;
+}
+
+.menu ul {
+    float: none;
+    margin-bottom: 9px;
+    margin-right: 15px;
+    width: 137px;
+    /* border: 1px solid; */
+}
+
+.menu ul:last-child {
+    margin-right: 0;
+}
+
+.menu a {
+    border-bottom: 0px solid #ddd;
+    color: gray;
+    display: block;
+    padding: 10px 0;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    color: rgb(158, 158, 207);
+    font-weight: bold;
+}
+
+.list {
+    position: static;
+}
+
+.list>a {
+    font-family: sans-serif !important;
+    font-size: 16px;
+    padding-left: 21px;
+    position: relative;
+    color: #474d64;
+    font-weight: 500;
+    text-decoration: none;
+    top: 5px;
+}
+
+.list>a:after {
+    font-family: FontAwesome;
+    font-size: 12px;
+    padding-left: 6px;
+    position: relative;
+    font-weight: bold;
+    top: -1px;
+}
+
+.list:hover .menu {
+    display: block;
+}
+
+.list:hover .amp {
+    display: flex;
+    flex-direction: row;
+}
+
+h3 {
+    color: black;
+}
+
+#s {
+    margin-left: -51px;
+    top: -1px;
+    font-size: 16px;
+    padding-left: 13px;
+    border-left: 1px solid gray;
+}
+
+#size {
+    margin-left: -90px;
+    width: 132px;
+    margin-top: 16px;
+}
+
+.list {
+    list-style: none;
+}
+
+h1+p {
+    text-align: center;
+    color: gray;
+    margin: 10px;
+    line-height: 20px;
+    font-size: 18px;
+}
+
+
+
+span {
+    color: grey;
+    font-size: 17px;
+    margin-top: -10px;
+    margin-left: 20px;
+}
+
+
+#loginPanel {
+    position: fixed;
+    top: 0;
+    right: -40%; 
+    width: 30%; 
+    height: 100%; 
+    background-color: white;
+    box-shadow: -2px 0px 5px rgba(0,0,0,0.3);
+    transition: right 0.3s ease-in-out, width 0.5s ease-in-out, height 0.5s ease-in-out; 
+    padding: 20px;
+    box-sizing: border-box;
+    z-index: 1000; 
+}
+
+#loginPanel.expanded {
+    right: 0;
+    width: 30%; 
+    height: 100%;
+    border-radius: 15px;
+}
+
+
+#loginPanel h2 {
+    margin-top: 0;
+}
+
+.closeBtn {
+    position: absolute;
+    top: 28px;
+    right: 35px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+
+/* form wla part  */
+
+ #container {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  .left {
+    width: 450px;
+  }
+  
+  .left > img {
+    width: 100%;
+    margin-top: 70px;
+    box-shadow: rgba(1, 162, 255, 0.2) 0px 7px 29px 0px;
+  }
+  
+  
+  .right {
+    margin-top: 80px;
+    background-color: #ffffff;
+    width: 400px;
+    height: 500px;
+    padding: 20px 30px;
+    box-shadow: rgba(1, 162, 255, 0.2) 0px 7px 29px 0px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  } */
+  
+  form {
+    margin: auto;
+    width: 95%;
+    text-align: left;
+  }
+  
+  
+  label {
+    font-size: 14px;
+    color: #445577;
+    font-weight: bolder;
+  }
+  
+  
+  .inputDivs input {
+    border: 1px solid #ccc;
+    width: 100%;
+    padding: 12px;
+    margin-top: 6px;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+    margin-bottom: 5px;
+    color: #445577;
+    outline: none;
+  }
+  
+  
+  .inputDivs{
+    margin: 20px 0px;
+  }
+  
+  
+  #login {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 15px;
+    width: 100%;
+    background-color: #4a90e2;
+    color: white;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  #login:hover {
+    background-color: #0c6cda;
+  }
+  
+  #otp > a {
+    color: #4a90e2;
+    font-weight: bold;
+    font-size: 12px;
+    text-decoration: none;
+  }
+  
+  #otp {
+    text-align: center;
+  }
+  
+  #googleDiv {
+    margin-top: 20px;
+    border-top: 1px solid gray;
+    display: flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  #OR {
+    position:relative;
+    top: -10px;
+    left: 0px;
+    background-color: white;
+    padding: 0px 5px;
+    color: gray;
+  }
+  
+  
+  #googleButton > img{
+    width: 25px;
+    margin-left: 20px;
+    margin-right: 43px;
+  }
+  
+  
+  #googleButton{
+    /* margin-top: 10px; */
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border-radius: 50px;
+    /* padding: 8px 10px; */
+    width: 310px;
+    color: gray;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: pointer;
+  } 
+
+
+  
+/* Corrected styling for the show/hide password text */
+#showPassword {
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+  top: 37px;
+  transform: translateY(-50%);
+  font-size: 16px;
+  color: #1e53e1;
+  font-weight: bold;
+}
+
+.inputDivs {
+  position: relative;
+}
+
+
+
+  /* error show  */
+.errorBox {
+  display: none;
+  position: absolute;
+  width: 18%;
+  
+  z-index: 99999;
+}
+.error {
+  border: 2px solid red;
+  margin-top: -289px;
+  /* margin-left: 275px; */
+  min-height: 50;
+  width: 400px;
+  border-radius: 0 0 0 4px #fcf4f4 inset;
+  border-radius: 4px;
+  /* padding: 0px 207px 0px 66px; */
+  display: flex;
+  background-color: rgb(255 244 212);
+
+}
+.errorList {
+  list-style: none;
+}
+
+
+.error span {
+  margin-left: 15px;
+}
+.error span > ul {
+  /* padding-top: 5px; */
+  font-size: 13px;
+    line-height: 0px;
+    margin-left: -41px;
+    margin-top: -11px;
+    margin-bottom: 20px;
+    color: red;
+}
+.error h4 {
+  color: #d14803;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 21px;
+  margin-top: 20px;
+  margin-left: -5px;
+}
+
+
+#darkMode{
+  font-size: 23px;
+  margin: 10px;
+  color: gray;
+}
